@@ -1,4 +1,4 @@
-package com.picpay.desafio.android
+package franco.lucas.testepicpay
 
 object Constants {
 

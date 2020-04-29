@@ -1,4 +1,4 @@
-package franco.lucas.testepicpay
+package franco.lucas.testepicpay.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
@@ -6,7 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.picpay.desafio.android.UserListAdapter
+import franco.lucas.testepicpay.BR
+import franco.lucas.testepicpay.R
 import franco.lucas.testepicpay.databinding.ActivityMainBinding
 import franco.lucas.testepicpay.viewModel.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*

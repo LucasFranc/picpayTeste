@@ -1,8 +1,7 @@
-package com.picpay.desafio.android.service
+package franco.lucas.testepicpay.service
 
-import com.picpay.desafio.android.model.UserModel
+import franco.lucas.testepicpay.model.UserModel
 import kotlinx.coroutines.Deferred
-import retrofit2.Call
 import retrofit2.http.GET
 
 

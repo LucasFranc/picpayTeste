@@ -1,16 +1,14 @@
 package franco.lucas.testepicpay.viewModel
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
-import com.picpay.desafio.android.interactor.UsersInteractor
-import com.picpay.desafio.android.interactor.UsersInteractorImpl
-import com.picpay.desafio.android.model.UserModel
+import franco.lucas.testepicpay.interactor.UsersInteractor
+import franco.lucas.testepicpay.interactor.UsersInteractorImpl
+import franco.lucas.testepicpay.model.UserModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.lang.Exception
-import java.lang.NullPointerException
 
 //pode ser injetado
 class MainViewModel(private val interactor: UsersInteractor = UsersInteractorImpl()) {

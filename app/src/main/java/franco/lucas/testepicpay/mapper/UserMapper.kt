@@ -1,7 +1,7 @@
-package com.picpay.desafio.android.mapper
+package franco.lucas.testepicpay.mapper
 
-import com.picpay.desafio.android.model.UserModel
-import com.picpay.desafio.android.model.UserPM
+import franco.lucas.testepicpay.model.UserModel
+import franco.lucas.testepicpay.model.UserPM
 
 class UserMapper {
 

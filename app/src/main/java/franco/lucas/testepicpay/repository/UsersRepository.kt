@@ -1,10 +1,10 @@
-package com.picpay.desafio.android.repository
+package franco.lucas.testepicpay.repository
 
-import com.picpay.desafio.android.dataset.UsersLocalDataSet
-import com.picpay.desafio.android.dataset.UsersLocalDataSetImpl
-import com.picpay.desafio.android.dataset.UsersRemoteDataSet
-import com.picpay.desafio.android.dataset.UsersRemoteDataSetImpl
-import com.picpay.desafio.android.model.UserModel
+import franco.lucas.testepicpay.dataset.UsersLocalDataSet
+import franco.lucas.testepicpay.dataset.UsersLocalDataSetImpl
+import franco.lucas.testepicpay.dataset.UsersRemoteDataSet
+import franco.lucas.testepicpay.dataset.UsersRemoteDataSetImpl
+import franco.lucas.testepicpay.model.UserModel
 
 interface UsersRepository {
     suspend fun getUsers(): List<UserModel>?

@@ -1,15 +1,15 @@
-package com.picpay.desafio.android.dataset
+package franco.lucas.testepicpay.dataset
 
-import com.picpay.desafio.android.service.Service
-import com.picpay.desafio.android.model.UserModel
-import com.picpay.desafio.android.retrofit.Client
-import com.picpay.desafio.android.retrofit.ClientImpl
+import franco.lucas.testepicpay.service.Service
+import franco.lucas.testepicpay.model.UserModel
+import franco.lucas.testepicpay.retrofit.Client
+import franco.lucas.testepicpay.retrofit.ClientImpl
 
 interface UsersRemoteDataSet {
     suspend fun getUsersByRemote(): List<UserModel>
 }
 
-class UsersRemoteDataSetImpl : UsersRemoteDataSet{
+class UsersRemoteDataSetImpl : UsersRemoteDataSet {
 
     private var client: Client = ClientImpl() // poderia ser injetado por di
 

@@ -1,12 +1,8 @@
-package com.picpay.desafio.android.interactor
+package franco.lucas.testepicpay.interactor
 
-import com.picpay.desafio.android.mapper.UserMapper
-import com.picpay.desafio.android.model.UserModel
-import com.picpay.desafio.android.model.UserPM
-import com.picpay.desafio.android.repository.UsersRepositoryImpl
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.withContext
+import franco.lucas.testepicpay.mapper.UserMapper
+import franco.lucas.testepicpay.model.UserPM
+import franco.lucas.testepicpay.repository.UsersRepositoryImpl
 
 interface UsersInteractor : BaseInteractor<Unit, UserPM>
 

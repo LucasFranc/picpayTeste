@@ -3,9 +3,9 @@ package franco.lucas.testepicpay.viewModel
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.nhaarman.mockitokotlin2.*
-import com.picpay.desafio.android.interactor.UsersInteractor
-import com.picpay.desafio.android.model.UserModel
-import com.picpay.desafio.android.model.UserPM
+import franco.lucas.testepicpay.interactor.UsersInteractor
+import franco.lucas.testepicpay.model.UserModel
+import franco.lucas.testepicpay.model.UserPM
 import kotlinx.coroutines.*
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain

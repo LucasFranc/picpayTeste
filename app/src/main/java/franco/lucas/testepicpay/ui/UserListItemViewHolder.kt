@@ -1,8 +1,8 @@
-package com.picpay.desafio.android
+package franco.lucas.testepicpay.ui
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.picpay.desafio.android.model.UserModel
+import franco.lucas.testepicpay.model.UserModel
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import franco.lucas.testepicpay.R

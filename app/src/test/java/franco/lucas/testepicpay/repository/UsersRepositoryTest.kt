@@ -4,11 +4,9 @@ import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.times
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
-import com.picpay.desafio.android.dataset.UsersLocalDataSet
-import com.picpay.desafio.android.dataset.UsersRemoteDataSet
-import com.picpay.desafio.android.model.UserModel
-import com.picpay.desafio.android.repository.UsersRepository
-import com.picpay.desafio.android.repository.UsersRepositoryImpl
+import franco.lucas.testepicpay.dataset.UsersLocalDataSet
+import franco.lucas.testepicpay.dataset.UsersRemoteDataSet
+import franco.lucas.testepicpay.model.UserModel
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert
 import org.junit.Before

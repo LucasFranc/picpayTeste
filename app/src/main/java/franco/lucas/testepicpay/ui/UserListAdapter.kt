@@ -1,11 +1,9 @@
-package com.picpay.desafio.android
+package franco.lucas.testepicpay.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.picpay.desafio.android.model.UserModel
-import franco.lucas.testepicpay.AdapterItensContract
+import franco.lucas.testepicpay.model.UserModel
 import franco.lucas.testepicpay.R
 
 class UserListAdapter : RecyclerView.Adapter<UserListItemViewHolder>(), AdapterItensContract {
