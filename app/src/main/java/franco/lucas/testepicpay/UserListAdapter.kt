@@ -11,16 +11,6 @@ import franco.lucas.testepicpay.R
 class UserListAdapter : RecyclerView.Adapter<UserListItemViewHolder>(), AdapterItensContract {
 
     var users = mutableListOf<UserModel>()
-        set(value) {
-            val result = DiffUtil.calculateDiff(
-                UserListDiffCallback(
-                    field,
-                    value
-                )
-            )
-            result.dispatchUpdatesTo(this)
-            field = value
-        }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserListItemViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -37,7 +27,7 @@ class UserListAdapter : RecyclerView.Adapter<UserListItemViewHolder>(), AdapterI
 
     override fun replaceItens(list: List<Any>) {
         users.clear()
-        val teste = list.mapNotNull {
+        val updatedList = list.mapNotNull {
             val cast = it
             if(cast is UserModel) {
                 cast
@@ -45,7 +35,7 @@ class UserListAdapter : RecyclerView.Adapter<UserListItemViewHolder>(), AdapterI
                 null
             }
         }
-        users.addAll(teste)
+        users.addAll(updatedList)
         notifyDataSetChanged()
     }
 }

@@ -7,7 +7,7 @@ import com.picpay.desafio.android.retrofit.ClientImpl
 
 class UsersRemoteDataSet {
 
-    private var client: Client = ClientImpl()
+    private var client: Client = ClientImpl() // poderia ser injetado por di
 
     suspend fun getUsersByRemote(): List<UserModel> =
         client.getClientDefault().create(Service::class.java).getUsers().await()
