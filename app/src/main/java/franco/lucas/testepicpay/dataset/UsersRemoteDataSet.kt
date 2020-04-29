@@ -5,10 +5,14 @@ import com.picpay.desafio.android.model.UserModel
 import com.picpay.desafio.android.retrofit.Client
 import com.picpay.desafio.android.retrofit.ClientImpl
 
-class UsersRemoteDataSet {
+interface UsersRemoteDataSet {
+    suspend fun getUsersByRemote(): List<UserModel>
+}
+
+class UsersRemoteDataSetImpl : UsersRemoteDataSet{
 
     private var client: Client = ClientImpl() // poderia ser injetado por di
 
-    suspend fun getUsersByRemote(): List<UserModel> =
+    override suspend fun getUsersByRemote(): List<UserModel> =
         client.getClientDefault().create(Service::class.java).getUsers().await()
 }
