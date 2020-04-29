@@ -1,7 +1,8 @@
-package franco.lucas.testepicpay
+package franco.lucas.testepicpay.ext
 
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
+import franco.lucas.testepicpay.AdapterItensContract
 
 @BindingAdapter("bind:items")
 fun RecyclerView.setItems(list :List<Any>?){

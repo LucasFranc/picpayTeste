@@ -1,4 +1,4 @@
-package franco.lucas.testepicpay
+package franco.lucas.testepicpay.ext
 
 import android.view.View
 import androidx.databinding.BindingAdapter
